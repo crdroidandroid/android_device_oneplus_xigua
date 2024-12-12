@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023-2025 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Whether to enable framework dimming for UDFPS -->
+    <bool name="config_udfpsFrameworkDimming">true</bool>
+
+    <!-- Smoothed brightness-alpha LUT for framework dimming -->
+    <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
+        <item>0,255</item>
+        <item>1,250</item>
+        <item>39,248</item>
+        <item>250,245</item>
+        <item>290,243</item>
+        <item>355,241</item>
+        <item>519,239</item>
+        <item>560,236</item>
+        <item>595,234</item>
+        <item>713,230</item>
+        <item>805,228</item>
+        <item>859,225</item>
+        <item>1124,220</item>
+        <item>1259,217</item>
+        <item>1346,212</item>
+        <item>1447,205</item>
+        <item>1674,196</item>
+        <item>1797,189</item>
+        <item>1983,181</item>
+        <item>2149,174</item>
+        <item>2345,165</item>
+        <item>2500,158</item>
+        <item>2651,147</item>
+        <item>2803,138</item>
+        <item>2938,123</item>
+        <item>3027,111</item>
+        <item>3115,98</item>
+        <item>3256,82</item>
+        <item>3331,74</item>
+        <item>4095,0</item>
+    </string-array>
+</resources>
