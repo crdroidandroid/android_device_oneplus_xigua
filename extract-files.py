@@ -33,6 +33,7 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'com.qti.sensor.s5k3p9',
         'libhwconfigurationutil',
         'vendor.oplus.hardware.cammidasservice-V1-ndk',
     ): lib_fixup_vendor_suffix,
@@ -40,11 +41,8 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
-        .regex_replace('SystemCamera =  0;  0;  0;  1;  0;  1;', 'SystemCamera =  0;  0;  0;  0;  0;  0;'),
-    (
-        'odm/etc/libnfc-mtp-SN220.conf_23801',
-        'odm/etc/libnfc-mtp-SN220.conf_23861'
-    ): blob_fixup()
+        .regex_replace('SystemCamera =  0;  0;  1;  1;  1;', 'SystemCamera =  0;  0;  0;  0;  0;'),
+    'odm/etc/libnfc-mtp-SN100.conf_22851': blob_fixup()
         .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
@@ -53,7 +51,8 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libCOppLceTonemapAPI.so',
         'odm/lib64/libSuperRaw.so',
         'odm/lib64/libYTCommon.so',
-        'odm/lib64/libyuv2.so'
+        'odm/lib64/libyuv2.so',
+        'odm/lib64/libCS.so'
     ): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     (

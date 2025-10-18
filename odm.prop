@@ -6,4 +6,4 @@ ro.vendor.oplus.regionmark=CN
 persist.vendor.display.pxlw.iris_feature=0x41ff0780
 
 # NFC
-persist.vendor.nfc.config_file_name=libnfc-mtp-SN220.conf_23801
+persist.vendor.nfc.config_file_name=libnfc-mtp-SN100.conf_22851
