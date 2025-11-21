@@ -1,0 +1,11 @@
+# Device info
+ro.product.odm.device=OP5943L1
+ro.product.odm.model=PJA110
+ro.product.odm.name=PJA110
+ro.vendor.oplus.regionmark=CN
+
+# Display
+persist.vendor.display.pxlw.iris_feature=0x41ff0780
+
+# NFC
+persist.vendor.nfc.config_file_name=libnfc-mtp-SN100.conf_22851

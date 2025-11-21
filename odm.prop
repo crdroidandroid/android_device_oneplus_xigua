@@ -1,9 +1,3 @@
-# Device
-ro.product.odm.name=PJA110
-ro.vendor.oplus.regionmark=CN
-
-# Display
-persist.vendor.display.pxlw.iris_feature=0x41ff0780
-
-# NFC
-persist.vendor.nfc.config_file_name=libnfc-mtp-SN100.conf_22851
+# Regional properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system
+import /odm/etc/${ro.boot.prjname}/build.default.prop

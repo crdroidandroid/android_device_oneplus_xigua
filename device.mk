@@ -57,6 +57,10 @@ PRODUCT_PACKAGES += \
 # Power
 $(call soong_config_set,qtipower,mode_ext_lib,power-ext-oplus)
 
+# Regional properties
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/22851/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/22851/build.default.prop
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.oplus
