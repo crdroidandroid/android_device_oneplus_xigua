@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Ace 2 Pro (PJA110_15.0.0.860(CN01)).
+## are from OnePlus Ace 2 Pro (PJA110_15.0.0.861(CN01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb

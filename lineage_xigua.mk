@@ -23,8 +23,8 @@ PRODUCT_MODEL := PJA110
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="qssi-user 15 AP3A.240617.008 1757506468816 release-keys" \
-    BuildFingerprint=OnePlus/PJA110/OP5943L1:15/AP3A.240617.008/T.390fb20-195d3e4-19c330c:user/release-keys \
+    BuildDesc="PJA110-user 15 AP3A.240617.008 T.1baf1ee_502b7e_502b7f release-keys" \
+    BuildFingerprint=OnePlus/PJA110/OP5943L1:15/AP3A.240617.008/T.1baf1ee_502b7e_502b7f:user/release-keys \
     DeviceName=OP5943L1 \
     DeviceProduct=PJA110 \
     SystemDevice=OP5943L1 \
