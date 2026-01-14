@@ -21,6 +21,9 @@ TARGET_SCREEN_WIDTH := 1240
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947194812807555.xml
 
+$(call soong_config_set,qtidisplay,pxlw_vendor_namespace,vendor/oneplus/xigua)
+$(call soong_config_set_bool,qtidisplay,pxlw_hw_iris7,true)
+
 PRODUCT_SYSTEM_PROPERTIES += \
     sys.brightness.disable_gamma_conversion=true
 
