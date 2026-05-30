@@ -36,7 +36,6 @@ lib_fixups: lib_fixups_user_type = {
     (
         'com.qti.sensor.s5k3p9',
         'libhwconfigurationutil',
-        'vendor.oplus.hardware.cammidasservice-V1-ndk',
     ): lib_fixup_vendor_suffix,
 }
 
