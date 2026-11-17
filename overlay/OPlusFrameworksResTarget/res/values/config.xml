@@ -9,6 +9,14 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
+    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item>
+        <item>256</item>
+        <item>258</item>
+        <item>259</item>
+    </integer-array>
+
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
          config_ambientThresholdLevels. The brightening threshold is calculated as
